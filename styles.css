@@ -175,7 +175,7 @@ body {
     font-weight: 900;
     line-height: 1.625;
     letter-spacing: 4px;
-    color: hsl(192, 37%, 48%)
+    color: hsl(192, 37%, 48%);
 }
 
 .text-2.heading {
@@ -188,8 +188,53 @@ body {
 
 .footer {
     width: 100%;
-    background-image: url(./assets/mobile/image-footer.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.image-overlay {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(192°, 37%, 48%);
+}
+
+.image-footer {
+    position: relative;
+    width: 100%;
+    opacity: 1
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer.heading {
+    color: white;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.footer.paragraph {
+    color: white;
+    margin-top: 1.5rem
+}
+
+.footer-text .download {
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+
+
 }
