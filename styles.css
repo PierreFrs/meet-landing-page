@@ -22,11 +22,30 @@ body {
     height: 100vh;
 }
 
+.button {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    padding: 1em 2.5em;
+    border-radius: 29px;
+    width: fit-content;
+}
+
+.heading {
+    font-weight: 900;
+    padding: 0 2rem;
+    color: hsl(240, 21%, 20%);
+}
+
+.paragraph {
+    font-weight: 500;
+    color: hsl(240, 10%, 57%);
+    line-height: 1.625;   
+}
 
 /*header styles*/
 .header {
     width: 100%;
-    height: ;
     text-align: center;
     padding: 3rem 0;
 }
@@ -37,6 +56,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*text1 styles*/
 
 .text-1 {
     display: flex;
@@ -49,6 +70,7 @@ body {
 
 .image-hero-mobile-tablet {
     width: 100%;
+    height: 30%;
     overflow: hidden;
     background-image: url(./assets/tablet/image-hero.png);
     background-position: center;
@@ -65,6 +87,109 @@ body {
 
 .text-1.heading {
     font-size: 2.5rem;
+}
+
+.text-1.paragraph {
+    margin-top: 1.5rem;
+     
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button.download {
+    background: hsl(192, 37%, 48%);
+}
+
+.button.download:hover {
+    background: #71C0D4;
+}
+
+.version-number {
+    color: hsl(192, 90%, 77%);
+}
+
+.button.what {
+    background: hsl(268, 34%, 53%);
+}
+
+.button.what:hover {
+    background: #B18BDD;
+}
+
+.number-beacon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.vertical-lign {
+    width: 1px;
+    height: 84px;
+    background-color: hsl(240, 10%, 80%);
+}
+
+.number {
     font-weight: 900;
-    padding: 0 6rem;
+    padding: 1rem;
+    color: hsl(240, 10%, 60%);
+    border: 1px solid hsl(240, 10%, 80%);
+    border-radius: 50%;
+}
+
+/*gallery styles*/
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.gallery-photo {
+    max-width: 143px;
+    border-radius: 10px;
+}
+
+/*text2 styles*/
+
+.text-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.overline {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.625;
+    letter-spacing: 4px;
+    color: hsl(192, 37%, 48%)
+}
+
+.text-2.heading {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+
+}
+
+/*footer styles*/
+
+.footer {
+    width: 100%;
+    background-image: url(./assets/mobile/image-footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
