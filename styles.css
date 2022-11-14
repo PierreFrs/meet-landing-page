@@ -1,0 +1,70 @@
+/*general styles*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+body {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/*header styles*/
+.header {
+    width: 100%;
+    height: ;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/*main styles*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-hero-desktop {
+    display: none;
+}
+
+.image-hero-mobile-tablet {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./assets/tablet/image-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-box-1{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.text-1.heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 0 6rem;
+}
