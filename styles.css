@@ -29,6 +29,7 @@ body {
     padding: 1em 2.5em;
     border-radius: 29px;
     width: fit-content;
+    white-space: nowrap;
 }
 
 .heading {
@@ -54,16 +55,20 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /*text1 styles*/
 
 .text-1 {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.image-hero-desktop {
+.image-hero-left,
+.image-hero-right {
     display: none;
 }
 
@@ -77,19 +82,20 @@ body {
     width: 100%;
 }
 
-.text-box-1{
+.desktop-text-box-1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0 1.5rem;
     text-align: center;
 }
 
-.text-1.heading {
+.text-1 .heading {
     margin-top: 1.2em;
     font-size: 2.5rem;
 }
 
-.text-1.paragraph {
+.text-1 .paragraph {
     margin-top: 1.5rem;
      
 }
@@ -278,7 +284,7 @@ body {
         padding: 0 10rem;
     }
 
-    .text-1.heading {
+    .text-1 .heading {
         font-size: 3rem;
     }
 
@@ -286,11 +292,11 @@ body {
         gap: .6875rem;
     }
 
-    .text-2{
+    .text-2 {
         padding: 0 2rem;
     }
 
-    .text-2.heading {
+    .text-2 .heading {
         font-size: 2.5rem;
         padding: 0 5.5rem;
     }
@@ -299,9 +305,117 @@ body {
         padding: 0 2rem;
     }
     
-    .footer.heading {
+    .footer .heading {
         font-size: 2.5rem;
         padding: 0 5.5rem;
     }
 
 }
+
+/*desktop size*/
+
+@media only screen and (min-width: 769px) {
+
+    .html {
+        font-size: 18px;
+    }
+
+    body {
+        max-width: 1440px;
+    }
+
+    .header {
+        padding: 4.444rem 0;
+    }
+
+    .image-hero-mobile-tablet {
+        display: none;
+    }
+
+    .text-box-1{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image-hero-left,
+    .image-hero-right {
+        display: block;
+        width: 30%;
+        overflow: hidden;
+    }
+
+    .desktop-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .desktop-text-box-1 {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .desktop-text-box-1 .heading {
+        font-size: 3.555rem;
+        padding: 0;
+        margin-top: 1em;
+    }
+
+    .gallery {
+        gap: 1.666rem;
+    }
+
+    .gallery-photo {
+        max-width: 255px;
+    }
+    
+    .text-2 {
+        width: 65%;
+    }
+
+    .overline {
+        font-size: 0.888
+    }
+
+    .text-2 .heading {
+        font-size: 2.222rem;
+        padding: 0 4.5rem;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer-text {
+        padding: 6.444rem 9.166rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer .heading {
+        margin: 0;
+        font-size: 2.222rem;
+        padding: 0;
+        text-align: left;
+        width: 40%;
+    }
+    
+    .footer.paragraph {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        width: 30%;
+    }
+    
+    .footer-text .download {
+        margin: 0;
+    }
+}
+
