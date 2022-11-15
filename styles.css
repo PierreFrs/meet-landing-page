@@ -90,7 +90,7 @@ body {
     text-align: center;
 }
 
-.text-1 .heading {
+.desktop-text-box-1 .heading {
     margin-top: 1.2em;
     font-size: 2.5rem;
 }
@@ -239,13 +239,13 @@ body {
     z-index: 1;
 }
 
-.footer.heading {
+.footer .heading {
     color: white;
     font-size: 2rem;
     margin-top: 4rem;
 }
 
-.footer.paragraph {
+.footer .paragraph {
     color: white;
     margin-top: 1.5rem
 }
@@ -284,7 +284,7 @@ body {
         padding: 0 10rem;
     }
 
-    .text-1 .heading {
+    .desktop-text-box-1 .heading {
         font-size: 3rem;
     }
 
@@ -316,7 +316,7 @@ body {
 
 @media only screen and (min-width: 769px) {
 
-    .html {
+    html {
         font-size: 18px;
     }
 
@@ -364,7 +364,7 @@ body {
     .desktop-text-box-1 .heading {
         font-size: 3.555rem;
         padding: 0;
-        margin-top: 1em;
+        margin-top: 0;
     }
 
     .gallery {
