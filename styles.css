@@ -33,7 +33,6 @@ body {
 
 .heading {
     font-weight: 900;
-    padding: 0 2rem;
     color: hsl(240, 21%, 20%);
 }
 
@@ -68,14 +67,14 @@ body {
     display: none;
 }
 
+.hero-mobile-tablet {
+    width: 100%;
+    min-height: 153px;
+    overflow: hidden;
+}
+
 .image-hero-mobile-tablet {
     width: 100%;
-    height: 30%;
-    overflow: hidden;
-    background-image: url(./assets/tablet/image-hero.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .text-box-1{
@@ -86,6 +85,7 @@ body {
 }
 
 .text-1.heading {
+    margin-top: 1.2em;
     font-size: 2.5rem;
 }
 
@@ -96,8 +96,8 @@ body {
 
 .buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -141,6 +141,7 @@ body {
     color: hsl(240, 10%, 60%);
     border: 1px solid hsl(240, 10%, 80%);
     border-radius: 50%;
+    background-color: white;
 }
 
 /*gallery styles*/
@@ -181,6 +182,12 @@ body {
 .text-2.heading {
     margin-top: 1.5rem;
     font-size: 2rem;
+}
+
+.text-2 .number-beacon {
+    position: relative;
+    margin-bottom: -28px;
+    z-index: 2;
 
 }
 
@@ -241,5 +248,60 @@ body {
     margin-top: 2rem;
     margin-bottom: 4.5rem;
     z-index: 1;
+    background-color: hsl(268, 34%, 53%);
+}
+
+.footer-text .download .version-number {
+    color: hsl(268, 100%, 86%);
+}
+
+.footer-text .download:hover {
+    background-color: hsl(268, 69%, 69%);
+}
+
+
+/*media queries*/
+
+/*tablet size*/
+
+@media only screen and (min-width:376px) {
+
+    body {
+        max-width: 768px;
+    }
+
+    .image-hero-mobile-tablet {
+        max-height: 303px;
+    }
+
+    .text-box-1{
+        padding: 0 10rem;
+    }
+
+    .text-1.heading {
+        font-size: 3rem;
+    }
+
+    .gallery {
+        gap: .6875rem;
+    }
+
+    .text-2{
+        padding: 0 2rem;
+    }
+
+    .text-2.heading {
+        font-size: 2.5rem;
+        padding: 0 5.5rem;
+    }
+
+    .footer {
+        padding: 0 2rem;
+    }
+    
+    .footer.heading {
+        font-size: 2.5rem;
+        padding: 0 5.5rem;
+    }
 
 }
